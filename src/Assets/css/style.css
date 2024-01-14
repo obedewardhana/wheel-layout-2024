@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff') format('woff'),
+        url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans Bold';
+    src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff') format('woff'),
+        url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Plus Jakarta Sans Bold', sans-serif;
+}
+
+a,
+p,
+span {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.clr-dark-blue {
+    color: #062E7D;
+}
+
+.clr-mid-blue {
+    color: #0B53E3;
+}
+
+.bg-grey {
+    background-color: #F5F5F5;
+}
+
+.bg-dark-blue {
+    background-color: #062E7D;
+}
+
+.bg-mid-blue {
+    background-color: #0B53E3;
+}
+
+/* Wheels */
+
+.wheel-box {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+    right: -30%;
+}
+
+.wheel-area {
+    display: block;
+    position: absolute;
+    width: 570px;
+    height: 700px;
+    top: 50%;
+    right: 0;
+    transform: rotate(270deg) translateY(-50%);
+    transform-origin: top;
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+}
+
+.wheel-blade {
+    display: block;
+    position: relative;
+    max-width: 180px;
+}
+
+.wheel-blade h2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.wheel-center {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -50%) scale(1.3);
+    pointer-events: none;
+}
+
+.blade-1 {
+    display: block;
+    position: absolute;
+    top: calc(30% - 180px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blade-2 {
+    display: block;
+    position: absolute;
+    top: calc(46% - 180px);
+    left: 70%;
+    transform: rotate(40deg) translateX(-50%);
+}
+
+.blade-3 {
+    display: block;
+    position: absolute;
+    top: calc(69% - 180px);
+    left: 74%;
+    transform: rotate(80deg) translateX(-50%);
+}
+
+.blade-4 {
+    display: block;
+    position: absolute;
+    top: calc(88% - 180px);
+    left: 58%;
+    transform: rotate(120deg) translateX(-50%);
+}
+
+.blade-5 {
+    display: block;
+    position: absolute;
+    top: calc(94% - 180px);
+    left: 31%;
+    transform: rotate(160deg) translateX(-50%);
+}
+
+.blade-6 {
+    display: block;
+    position: absolute;
+    top: calc(85% - 180px);
+    left: 6%;
+    transform: rotate(200deg) translateX(-49%);
+}
+
+.blade-7 {
+    display: block;
+    position: absolute;
+    top: calc(65% - 180px);
+    left: -6%;
+    transform: rotate(240deg) translateX(-47%);
+}
+
+.blade-8 {
+    display: block;
+    position: absolute;
+    top: calc(43% - 180px);
+    left: 0%;
+    transform: rotate(280deg) translateX(-47%);
+}
+
+.blade-9 {
+    display: block;
+    position: absolute;
+    top: calc(29% - 180px);
+    left: 22%;
+    transform: rotate(320deg) translateX(-47%);
+}
+
+.wheel-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding-left:40px;
+    padding-right:40px;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+}
+
+.wheel-content.wheel-active {
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.wheel-button svg g>* {
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+}
+
+.blade-active svg g>* {
+    fill: #0B53E3;
+}
+
+.blade-active h2 {
+    color: #ffffff;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+}
+
+.delay-1 {
+    animation-delay: .3s;
+}
+
+.delay-2 {
+    animation-delay: .4s;
+}
+
+.delay-3 {
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.wheel-navigation {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background: #F5F5F5;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3.6px 1.1px 3.8px -17px rgba(0, 0, 0, 0.022), 9.1px 2.8px 9.7px -17px rgba(0, 0, 0, 0.031), 18.6px 5.7px 19.8px -17px rgba(0, 0, 0, 0.039), 38.3px 11.7px 40.9px -17px rgba(0, 0, 0, 0.048), 105px 32px 112px -17px rgba(0, 0, 0, 0.07);
+}
+
+.wheel-navigation .wheel-next {
+    transform: rotate(270deg);
+    margin-right: 6px;
+}
+
+.wheel-navigation .wheel-prev {
+    transform: rotate(270deg);
+}
+
+.wheel-navigation svg > path {
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+}
+
+.wheel-navigation .wheel-next:hover svg > path,
+.wheel-navigation .wheel-prev:hover svg > path {
+    fill: rgb(59 130 246 / 0.5);
+}
+
+@media screen and (max-width:1200px){
+    .wheel-navigation{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, 0%) rotate(90deg);
+    }
+    .wheel-area{
+        right: -34px;
+    }
+}
+
+
+@media screen and (max-width:1023px) {
+    .wheel-box{
+        right: unset;
+        position:relative;
+        margin-top: 50%;
+    }
+    .wheel-area{
+        right:unset;
+        position:relative;
+        top: 0;
+        margin:0 auto;
+    }
+    .wheel-navigation{
+        left:50%;
+        position:absolute;
+        transform: translate(-50%, -50%) rotate(90deg);
+        top:0!important;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .wheel-box {
+        transform: scale(.4) !important;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .wheel-area{
+        left: unset;
+        margin-left: -95%;
+    }
+}
