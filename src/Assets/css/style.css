@@ -328,6 +328,9 @@ span {
         transform: translate(-50%, -50%) rotate(90deg);
         top:0!important;
     }
+    .wheel-box.wheel-left {
+        left: unset!important;
+    }
 }
 
 @media screen and (max-width:630px) {

@@ -129,7 +129,7 @@ class WheelLayout extends Component {
 
     return (
       <section className="box-border flex flex-wrap justify-center md:justify-startw-full items-center min-h-screen overflow-hidden">
-        <div className="w-full relative lg:w-1/2 order-last">
+        <div className="w-full relative lg:w-1/2 order-first lg:order-last">
           <div className="wheel-content wheel-active" data-id="1">
             <h1 className="text-3xl">Your title 1.</h1>
             <p className="text-justify mt-3">
@@ -392,7 +392,7 @@ class WheelLayout extends Component {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 order-first">
+        <div className="w-full lg:w-1/2 order-last lg:order-first">
           <div className="wheel-box wheel-left">
             <div className="wheel-navigation">
               <button onClick={nextContent} className="wheel-next">
