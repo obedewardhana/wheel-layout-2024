@@ -345,5 +345,6 @@ span {
     }
     .wheel-box.wheel-left {
         left: unset!important;
+        transform: scale(.4) scaleX(-1) !important;
     }
 }
