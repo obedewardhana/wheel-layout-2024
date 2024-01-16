@@ -287,6 +287,16 @@ span {
     fill: rgb(59 130 246 / 0.5);
 }
 
+.wheel-left {
+    right: unset!important;
+    left: -30%!important;
+    transform: scaleX(-1);
+}
+
+.wheel-left .wheel-blade h2 {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1);
+}
+
 @media screen and (max-width:1200px){
     .wheel-navigation{
         position: relative;
@@ -329,5 +339,8 @@ span {
     .wheel-area{
         left: unset;
         margin-left: -95%;
+    }
+    .wheel-box.wheel-left {
+        left: unset!important;
     }
 }
